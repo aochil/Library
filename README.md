@@ -1,1 +1,1 @@
-# Library
+This is my library project, used the concepts of objects and creating objects according to user's inputs. UI still needs work but functionality is there.

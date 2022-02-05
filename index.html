@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="library.css">
+        
+
+        <header>Local Library</header>
+    </head>
+    <body>  
+        <div style="display: flex; justify-content: center;">
+            <button id="openModal">Add book</button>
+            <div class="modal" id="modal">
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <div class="title">Add book</div>
+                        <span class="close">&times;</span>
+                    </div>
+                    
+                    <form id="form" action="/" method="get">
+                        <div class="formBox">
+                            <div id="titleError"></div>
+                            <label for="title">Book Title</label>
+                            <input type="text" id="title" name="title" placeholder="Enter Book Title" required/>
+                        </div>
+                        <div class="formBox">
+                            <div id="authorError"></div>
+                            <label for="author">Author</label>
+                            <input type="text" id="author" placeholder="Enter Author" required/>
+                        </div>
+                        <div class="formBox">
+                            <div id="pagesError"></div>
+                            <label for="pages">Pages</label>
+                            <input type="number" id="pages" placeholder="Number of Pages" required/>
+                        </div>
+                        <div class="formBox">
+                            <label for="read">Read?</label>
+                            <input type="checkbox" id="read" name="read" data-val="true" and value="true" checked> 
+                            <button id="addBook" type="submit">Add Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="library">
+            <div class="bookList"></div>
+        </div>
+        <script src="library.js"></script>
+    </body>
+    
+</html>
