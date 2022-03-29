@@ -58,7 +58,6 @@ const addBook = (e) => {
   myLibrary.push(newBook);
   createBook(newBook);
   closeForm();
-  console.log(myLibrary);
   document.getElementById('form').reset();
 }
 
